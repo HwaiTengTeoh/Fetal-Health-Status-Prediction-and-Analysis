@@ -66,12 +66,13 @@ As the data distribution for each 3 class is highly imbalanced, different resamp
 - In contrast, Figure 1b shows the feature's importance with the decision tree model trained with merely CTG records data. It was interesting to note that pattern diagnostic attributes such as suspect pattern and shift pattern deceleration pattern occupied the top range of feature importance in Figure 1a with other CTG-related attributes. 
 - The suspect pattern attribute was the most important feature and acted as the deterministic factor for the classification prediction. With another model built with merely CTG record data, the percentage of time with abnormal short-term variability, the mean value of short-term variability (SisPorto), acceleration (SisPorto), the percentage of time with abnormal long-term variability (SisPorto), and mean value of histogram are having importance of more than 10%. The rest are shown in Figure 1b. 
 
-![]<Figure1a.png>
+![]<!Image/Figure1a.png>
 Figure 1a: Feature Importance by decision tree trained with CTG record data and pattern diagnostic attributes
 
 
-![]<Figure1b.png>
+![]<!Image/Figure1b.png>
 Figure 1b: Feature Importance by decision tree trained with CTG record data only
+
 ## Conclusion
 - CTG data helps examine and detect fetal abnormal health status. This earlier detection can help to decide on earlier medical intervention before too late for the growth of the baby. In this experimental study, we built the model with a different set of data, one with purely CTG records and another with CTG records and pattern diagnostic attributes. 
 - The model's performance trained with pattern diagnostic attributes can predict the minority class well for both DT and RF. However, in the actual scenario, these attributes may not exist; thus, we focus on the model trained using merely CTG data. 

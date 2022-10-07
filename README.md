@@ -80,6 +80,8 @@ The focus of the study here is to employ a Decision Tree (DT) and other tree-bas
 
 ![](<!Image/Table1.PNG>)
 
+Before training the model, we performed a train-test split in the ratio of 80:20, whereby 80% of the instances were used to train the tree-based model (DT and RF), and for the rest of the dataset, 20% was used to test the performance of the model. Since the data is imbalanced, we employ different resampling methods, as discussed earlier, to balance the proportion of the class distribution in the dataset. The resampled training dataset was used to fit the model, and the model's performance adopting different resampling techniques was evaluated using the hold-out test data. For the evaluation of the model, metrics such as accuracy, precision, recall, and f1-score were calculated and tabulated in Tables 19a and 19b. Both tables show the metrics of the performance of models built with the adoption of the ensembling method (Bagging and Boosting) and resampling method (Undersampling and Oversampling) for two different sets of data.
+
 ## Conclusion
 - CTG data helps examine and detect fetal abnormal health status. This earlier detection can help to decide on earlier medical intervention before too late for the growth of the baby. In this experimental study, we built the model with a different set of data, one with purely CTG records and another with CTG records and pattern diagnostic attributes. 
 - The model's performance trained with pattern diagnostic attributes can predict the minority class well for both DT and RF. However, in the actual scenario, these attributes may not exist; thus, we focus on the model trained using merely CTG data. 

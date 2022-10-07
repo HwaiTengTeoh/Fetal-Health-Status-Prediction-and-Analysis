@@ -66,19 +66,19 @@ As the data distribution for each 3 class is highly imbalanced, different resamp
 - In contrast, Figure 1b shows the feature's importance with the decision tree model trained with merely CTG records data. It was interesting to note that pattern diagnostic attributes such as suspect pattern and shift pattern deceleration pattern occupied the top range of feature importance in Figure 1a with other CTG-related attributes. 
 - The suspect pattern attribute was the most important feature and acted as the deterministic factor for the classification prediction. With another model built with merely CTG record data, the percentage of time with abnormal short-term variability, the mean value of short-term variability (SisPorto), acceleration (SisPorto), the percentage of time with abnormal long-term variability (SisPorto), and mean value of histogram are having importance of more than 10%. The rest are shown in Figure 1b. 
 
-![](<!Image/Figure1a.png>)
+![](<results/Figure1a.png>)
 \
 **Figure 1a: Feature Importance by decision tree trained with CTG record data and pattern diagnostic attributes**
 
 
-![](<!Image/Figure1b.png>)
+![](<results/Figure1b.png>)
 \
 **Figure 1b: Feature Importance by decision tree trained with CTG record data only**
 
 ### Modelling
 The focus of the study here is to employ a Decision Tree (DT) and other tree-based classifiers, such as Random Forest, using the ID3 algorithm to classify the health status of fetal: normal (N), suspicious (S), and pathologic (P). With the convenience of using the sklearn package from Python in building a classification prediction model, hyperparameter tuning was performed to find the best combination of parameters for DT and RF. The default values of the parameters were used at first, but the performance of the models was improved after hyperparameter tuning with grid search. We have tested different combinations of parameters when building tree-based models with entropy as a criterion in developing nodes and leaves. The selection of parameters was as follows: 
 
-![](<!Image/Table1.PNG>)
+![](<results/Table1.PNG>)
 
 Before training the model, we performed a train-test split in the ratio of 80:20, whereby 80% of the instances were used to train the tree-based model (DT and RF), and for the rest of the dataset, 20% was used to test the performance of the model. Since the data is imbalanced, we employ different resampling methods, as discussed earlier, to balance the proportion of the class distribution in the dataset. The resampled training dataset was used to fit the model, and the model's performance adopting different resampling techniques was evaluated using the hold-out test data. For the evaluation of the model, metrics such as accuracy, precision, recall, and f1-score were calculated and tabulated in Tables 19a and 19b. Both tables show the metrics of the performance of models built with the adoption of the ensembling method (Bagging and Boosting) and resampling method (Undersampling and Oversampling) for two different sets of data.
 

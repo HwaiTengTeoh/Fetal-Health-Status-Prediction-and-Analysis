@@ -10,9 +10,50 @@ In this era with advanced healthcare and healthcare facilities, most pregnancies
 - To evaluate the performance of machine learning classification models built using different Decision Tree algorithms 
 
 ## Data Sources
-https://archive.ics.uci.edu/ml/datasets/cardiotocography
+Cardiotocography (CTG) Dataset from UCI Machine Learning Repository is used to study and analyze the underlying pattern that could be utilized for classification prediction. The dataset has a total count of 40 attributes with basic information and SegFile as the unique identifier, 23 numerical attributes, 11 categorical attributes, which are classification work done by medical experts, and one target label. All the categorical attributes in the dataset are diagnostic attributes labeled by the medical experts, whereas the 23 numerical attributes are the actual CTG readings. It contains 2,126 instances with three different classes of fetal health status, which are *normal, suspect, and pathologic*. 
+
+The distribution of each class in this study is as follows:
+- Normal: 1,655 (78%)
+- Suspect: 295 (14%)
+- Pathologic: 176 (8%)
 
 ## Methodology
+- As the data distribution for each 3 class is highly imbalanced, different resampling methods are used alongside other data preprocessing techniques such as normalization and dropping of columns were applied to the dataset to study the changes in the machine learning models’ performance. 
+- Data preprocessing such as normalization, dropping of columns, and resampling will be done to transform, preprocess and cleanse the dataset to prepare it for Modelling. 
+- The different pre-processed datasets produced will be used to train a few tree-based models: Decision Tree, Random Forest, and Ensemble, which comprise Bagging and Boosting.
+
+### Resampling techniques
+#### Naïve resampling techniques
+- Random Oversampling
+- Random Undersampling
+
+#### Synthetic data sampling
+- Oversampling: SMOTE
+- Oversampling: Adaptive synthetic data sampling (ADASYN)
+- Oversampling: Borderline SMOTE
+- Oversampling: SVM SMOTE
+
+#### Data Cleaning Techniques
+- Undersampling: Tomek-link 
+- Undersampling: Condensed Nearest Neighbor
+- Undersampling: One Sided Selection
+- Undersampling: Edited Nearest Neighbour
+- Undersampling: Repeated Edited Nearest Neighbour and All KNN
+- Undersampling: Neighborhood Cleaning rule
+
+| Resampling Techniques with kNN algorithms |	k |
+| **Undersampling** | |
+| Condensed Nearest Neighbor (CNN) |	1 |
+| Tomac Link (TL) |	1 |
+| One Sided Selection (OSS) |	1 |
+| Edited Nearest Neighbour (ENN) |	3 |
+| Repeated Edited Nearest Neighbour (RENN) |	3 |
+| All KNN |	3 |
+| Neighborhood Cleaning rule |	3 |
+| **Oversampling:** |	 |
+| SMOTE |	5 |
+| BorderlineSMOTE1 |	5 |
+| BorderlineSMOTE2 | 5 |
 
 ## Results and Findings
 

@@ -4,6 +4,7 @@
 The original CTG dataset is shared here: https://archive.ics.uci.edu/ml/datasets/cardiotocography
 
 ### Processed Data
+The raw data is preprocessed differently as shown below:
 
 | Dataset |	Treatment for Categorical Data |	Treatment for Numerical Data |
 | :-: | :-: | :-: |

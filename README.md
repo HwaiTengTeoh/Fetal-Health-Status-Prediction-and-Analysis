@@ -42,7 +42,7 @@ The distribution of each class in this study is as follows:
 - Undersampling: Neighborhood Cleaning rule
 
 | Resampling Techniques with kNN algorithms |	k |
-|:-:|:-:|:-:|
+|:-:|:-:|
 | **Undersampling** | |
 | Condensed Nearest Neighbor (CNN) |	1 |
 | Tomac Link (TL) |	1 |

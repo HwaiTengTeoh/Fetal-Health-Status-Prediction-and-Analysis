@@ -18,11 +18,12 @@ The distribution of each class in this study is as follows:
 - Pathologic: 176 (8%)
 
 ## Methodology
-- As the data distribution for each 3 class is highly imbalanced, different resampling methods are used alongside other data preprocessing techniques such as normalization and dropping of columns were applied to the dataset to study the changes in the machine learning models’ performance. 
 - Data preprocessing such as normalization, dropping of columns, and resampling will be done to transform, preprocess and cleanse the dataset to prepare it for Modelling. 
 - The different pre-processed datasets produced will be used to train a few tree-based models: Decision Tree, Random Forest, and Ensemble, which comprise Bagging and Boosting.
 
 ### Resampling techniques
+As the data distribution for each 3 class is highly imbalanced, different resampling methods are used alongside other data preprocessing techniques such as normalization and dropping of columns were applied to the dataset to study the changes in the machine learning models’ performance. 
+
 #### Naïve resampling techniques
 - Random Oversampling
 - Random Undersampling

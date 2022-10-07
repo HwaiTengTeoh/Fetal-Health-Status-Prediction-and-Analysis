@@ -43,7 +43,7 @@ The distribution of each class in this study is as follows:
 
 | Resampling Techniques with kNN algorithms |	k |
 |:-|:-:|
-| **Undersampling** | |
+| ***Undersampling*** | |
 | Condensed Nearest Neighbor (CNN) |	1 |
 | Tomac Link (TL) |	1 |
 | One Sided Selection (OSS) |	1 |
@@ -51,7 +51,7 @@ The distribution of each class in this study is as follows:
 | Repeated Edited Nearest Neighbour (RENN) |	3 |
 | All KNN |	3 |
 | Neighborhood Cleaning rule |	3 |
-| **Oversampling:** |	 |
+| ***Oversampling:*** |	 |
 | SMOTE |	5 |
 | BorderlineSMOTE1 |	5 |
 | BorderlineSMOTE2 | 5 |

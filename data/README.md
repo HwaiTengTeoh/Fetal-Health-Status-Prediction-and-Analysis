@@ -4,7 +4,7 @@
 The original CTG dataset is shared here: https://archive.ics.uci.edu/ml/datasets/cardiotocography
 
 ### Processed Data
- :-: | :-: | | :-: | | :-: |
+
 | Dataset |	Treatment for Categorical Data |	Treatment for Numerical Data |
 | :-: | :-: | :-: | :-: |
 | ori_label_encoded_df.csv	| Label Encoding	| Unnormalized |

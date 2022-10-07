@@ -41,6 +41,7 @@ The distribution of each class in this study is as follows:
 - Undersampling: Repeated Edited Nearest Neighbour and All KNN
 - Undersampling: Neighborhood Cleaning rule
 
+#### Summary of Resampling Techniques Used
 | Resampling Techniques with kNN algorithms |	k |
 |:-|:-:|
 | ***<ins>Undersampling:</ins>*** | |

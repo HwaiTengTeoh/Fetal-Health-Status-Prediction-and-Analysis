@@ -75,6 +75,11 @@ As the data distribution for each 3 class is highly imbalanced, different resamp
 \
 **Figure 1b: Feature Importance by decision tree trained with CTG record data only**
 
+### Modelling
+The focus of the study here is to employ a Decision Tree (DT) and other tree-based classifiers, such as Random Forest, using the ID3 algorithm to classify the health status of fetal: normal (N), suspicious (S), and pathologic (P). With the convenience of using the sklearn package from Python in building a classification prediction model, hyperparameter tuning was performed to find the best combination of parameters for DT and RF. The default values of the parameters were used at first, but the performance of the models was improved after hyperparameter tuning with grid search. We have tested different combinations of parameters when building tree-based models with entropy as a criterion in developing nodes and leaves. The selection of parameters was as follows: 
+
+![](<!Image/Table1.png>)
+
 ## Conclusion
 - CTG data helps examine and detect fetal abnormal health status. This earlier detection can help to decide on earlier medical intervention before too late for the growth of the baby. In this experimental study, we built the model with a different set of data, one with purely CTG records and another with CTG records and pattern diagnostic attributes. 
 - The model's performance trained with pattern diagnostic attributes can predict the minority class well for both DT and RF. However, in the actual scenario, these attributes may not exist; thus, we focus on the model trained using merely CTG data. 

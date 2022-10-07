@@ -68,12 +68,12 @@ As the data distribution for each 3 class is highly imbalanced, different resamp
 
 ![](<!Image/Figure1a.png>)
 \
-Figure 1a: Feature Importance by decision tree trained with CTG record data and pattern diagnostic attributes
+**Figure 1a: Feature Importance by decision tree trained with CTG record data and pattern diagnostic attributes**
 
 
 ![](<!Image/Figure1b.png>)
 \
-Figure 1b: Feature Importance by decision tree trained with CTG record data only
+**Figure 1b: Feature Importance by decision tree trained with CTG record data only**
 
 ## Conclusion
 - CTG data helps examine and detect fetal abnormal health status. This earlier detection can help to decide on earlier medical intervention before too late for the growth of the baby. In this experimental study, we built the model with a different set of data, one with purely CTG records and another with CTG records and pattern diagnostic attributes. 
